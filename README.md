@@ -1,7 +1,7 @@
 # react-videojs
 react videojs wrapper
 
-#### Installtion
+### Installtion
 ``` sh
 npm install react-videojs --save
 ```
