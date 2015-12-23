@@ -10,11 +10,11 @@ module.exports = React.createClass({
 
   componentDidMount: function componentDidMount() {
     var self = this;
-    videojs(this.refs.video).ready(function () {
-      var player = this;
-      self.player = player;
-      player.on('play', self.handlePlay);
+    var player = videojs(this.refs.video, this.props.options).ready(function () {
+      self.player = this;
+      self.player.on('play', self.handlePlay);
     });
+    if (this.props.onPlayerInit) this.props.onPlayerInit(player);
   },
 
   handlePlay: function handlePlay() {
