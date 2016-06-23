@@ -1,6 +1,6 @@
 {
   "name": "react-videojs",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "react videojs wrapper",
   "main": "index.js",
   "scripts": {
