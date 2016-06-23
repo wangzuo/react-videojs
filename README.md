@@ -10,6 +10,13 @@ npm install react-videojs --save
 http://esportsguy.github.io/react-videojs/
 
 ### Usage
+
+Video.js should be loaded globally.
+
+``` html
+<script src="http://vjs.zencdn.net/5-unsafe/video.js"></script>
+```
+
 ``` javascript
 <Video
   src="http://www.w3schools.com/html/mov_bbb.mp4"
