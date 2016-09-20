@@ -17,12 +17,13 @@ module.exports = React.createClass({
     if (this.props.onPlayerInit) this.props.onPlayerInit(player);
   },
 
+
   handlePlay: function handlePlay() {
     if (this.props.onPlay) this.props.onPlay(this.player);
   },
 
   render: function render() {
-    var props = blacklist(this.props, 'children', 'className', 'src', 'type', 'onPlay');
+    var props = blacklist(this.props, 'children', 'className', 'src', 'type', 'onPlay', 'onPlayerInit');
     props.className = cx(this.props.className, 'videojs', 'video-js vjs-default-skin');
 
     assign(props, {
